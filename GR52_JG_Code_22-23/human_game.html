@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Go Board</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="js/go.js"></script>
+	<script type="text/javascript" src="js/play1.js"></script>
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
+</head>
+
+<body>
+	
+	<div style="">
+		<canvas id="weiqi" width="600" height="600"></canvas>
+		<canvas id="path" width="600" height="600"></canvas>
+	</div>
+	<div class="parent">
+
+		<div class="child"><h3 style="margin-left: 10px;">White</h3><h3 id="white-score" style="margin-left: 273px;">0</h3></div>
+		
+		<div class="child-1"><h3 id="black-score" style="margin-left: 8px;">0</h3><h3 style="margin-left: 270px; float: right;">Black</h3></div>
+		
+	</div>
+
+	<div class="buttons">
+		<button id="move_show">Show no</button>
+		<button id="pass" data-no="0" onclick="">Pass</button>
+		<button id="resign" type="button">Resign</button>
+	</div>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+		<span class="close">&times;</span>
+		<p>Game Over! Thanks for playing.</p>
+		</div>
+  	</div>
+  
+
+</body>
+</html>

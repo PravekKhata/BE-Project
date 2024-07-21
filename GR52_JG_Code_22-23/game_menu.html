@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Go Game Menu</title>
+	<link rel="stylesheet" href="./css/game_menu.css">
+</head>
+<body>
+	<h1>Go Game Menu</h1>
+	<div class="container">
+		<button class="btn" onclick="startGame('human')">Human vs Human</button>
+		<button class="btn" onclick="startGame('bot')">Human vs Bot</button>
+		<button class="btn" onclick="showRules()">Rules and Instructions</button>
+	</div>
+
+	<div id="rules-modal" class="modal" >
+		<div class="modal-content">
+
+			<span class="close" onclick="hideRules()">&times;</span>
+
+			<h2><b>How to Play GO:</b></h2>
+
+			<ul>
+				<li>The objective of the game is for players to use the stones to form territories by occupying the vacant areas on the board.</li><br>
+				<li>At the beginning of the game, players should consider placing the stones near handicap markers, usually located in the corners of the board. This way, the player is at an advantage of gaining corner positions that help gain territory and are easy to defend.</li><br>
+				<li>Players should only play stones at the edge of the board as they are as easy to capture. Typically, the corner only needs two stones captured while side requires three stones. The open area, however, requires players to seize for stones.</li><br>
+				<li>If looking to occupy an open area, consider building off a stable structure. You get to protect your stones and create a broader base for subsequent moves.</li><br>
+				<li>Avoid placing your stones close to your opponent’s. You don’t want to allow them to gain more considerable influence when you are chasing stones.</li><br>
+				<li>Avoid placing your stones on your opponent’s territory. You are only providing them with free stones for capture. This strategy works when you are confident of capturing his stones.</li>
+			</ul>
+	
+			<br><br>
+
+			<h2><b>Go Game Rules and Instructions:</b></h2>
+
+			<ul>
+				<li>Go is a board game for two players, played on a 19x19 grid board.</li><br>
+				<li>The goal of the game is to control more territory than your opponent by placing stones on the board.</li><br>
+				<li>Players take turns placing stones on the board, with Black playing first.</li><br>
+				<li>Stones are black or white, and are placed on the intersections of the board lines.</li><br>
+				<li>Stones can be captured by surrounding them on all sides with your opponent's stones, which removes them from the board.</li><br>
+				<li>A liberty is an empty intersection adjacent to a stone.</li><br>
+				<li>Stones have liberties equal to the number of adjacent empty intersections.</li><br>
+				<li>Stones or groups of stones that have no liberties left are removed from the board as captured stones.</li><br>
+				<li>The ko rule states that a player cannot capture back immediately after their stone or group of stones has been captured. This is to prevent an endless cycle of captures, where two players capture each other's stones back and forth repeatedly.</li>
+			</ul>
+
+
+		</div>
+		
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
